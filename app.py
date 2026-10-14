@@ -273,3 +273,6 @@ def run_harness():
 
 if __name__ == "__main__":
     run_harness()
+{
+  "builds": [{ "src": "app.py", "use": "@vercel/python" }],
+  "routes": [{ "src": "/(.*)", "dest": "app.py" }]
